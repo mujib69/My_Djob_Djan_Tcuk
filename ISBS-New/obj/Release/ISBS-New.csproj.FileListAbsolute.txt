@@ -1,0 +1,393 @@
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ResolveAssemblyReference.cache
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Login.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.MainMenu.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.City.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.DashCity.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\Sample.CompanyInfo.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Customer.Customer.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Customer.DashCustomer.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Bentuk.BentukDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Bentuk.BentukForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Golongan.GolonganDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Golongan.GolonganForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.ItemGroup.ItemGroupDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.ItemGroup.ItemGroupForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Item.ItemDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Item.ItemForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.KodeBerat.KodeBeratDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.KodeBerat.KodeBeratForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Merk.MerkDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Merk.MerkForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Pabrik.PabrikDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Pabrik.PabrikForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Spek.SpekDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Spek.SpekForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Ukuran.UkuranDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Ukuran.UkuranForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Unit.UnitDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Unit.UnitForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Warehouse.WarehouseDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Warehouse.WarehouseForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Location.City.CityDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Location.City.CityForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Location.Province.ProvinceDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Location.Province.ProvinceForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Vendor.DashVendor.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Vendor.Vendor.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.DashFreeTextInvoice.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.FreeTextInvoiceHeader.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.DashPQ.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.PQHeader.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.DashPriceList.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListEditForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListNewForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.DashReceipt.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.ProductReceiptForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.DashInvoice.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.InvoiceHeader.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.DashPO.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.POHeader.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.DashPR.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.PRHeader.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptDashboard.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptForm.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Properties.Resources.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.PurchaseRequisition.DashboardPR.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.PurchaseRequisition.DetailPR.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.HeaderPR.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Search.resources
+E:\Project\ISBS-PakRafi\trunk\ISBS-New\obj\Release\ISBS-New.csproj.GenerateResource.Cache
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ResolveAssemblyReference.cache
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ResolveAssemblyReference.cache
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Login.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.MainMenu.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.AddressType.AddressTypeForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.AddressType.AddressTypeInquiry.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.BankGroup.BankGroupForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.BankGroup.BankGroupInquiry.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Bank.BankForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Bank.BankInquiry.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.City.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.InqCity.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CompanyInfo.FormCompanyInfo.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CompanyInfo.InquiryCompanyInfo.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.ConfigItem.FormConfigItem.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.ConfigItem.InquiryConfigItem.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Counter.Counter.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Counter.InqCounter.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Currency.Currency.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Currency.InqCurrency.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.AddItem.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.GelombangForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.GelombangInquiry.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Golongan.GolonganForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Golongan.GolonganInquiry.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Group.GroupForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Group.GroupInquiry.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Dimension.FormDimension.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Dimension.InquiryDimension.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.InventTable.FormInventTable.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.InventTable.InquiryInventTable.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup1.FormSubGroup1.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup1.InquirySubGroup1.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup2.FormSubGroup2.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup2.InquirySubGroup2.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Type.FormType.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Type.InquiryType.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Unit.FormUnit.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Unit.InquiryUnit.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.InqItem.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Item.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Manufacturer.InqManufacturer.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Manufacturer.Manufacturer.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Merek.InqMerek.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Merek.Merek.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Payment_Mode.InqPaymentMode.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Payment_Mode.PaymentMode.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.PIC.DashPIC.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.PIC.PIC.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Province.InqProvince.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Province.Province.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Quality.InqQuality.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Quality.Quality.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Spec.InqSpec.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Spec.Spec.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.TermOfPayment.InqToP.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.TermOfPayment.ToP.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendGroup.InqVendGroup.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendGroup.VendGroup.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendTable.InqVendTable.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendTable.VendTable.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.DashFreeTextInvoice.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.FreeTextInvoiceHeader.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.DashPQ.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.PQHeader.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.DashPriceList.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListEditForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListNewForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.DashReceipt.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.ProductReceiptForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.DashInvoice.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.InvoiceHeader.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.DashPO.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.POHeader.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.DashPR.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.PRHeader.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptDashboard.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptForm.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Properties.Resources.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.DetailPR.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.Gelombang.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.HeaderPR.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.Info.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.InquiryPR.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS_New.Search.resources
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS-New.csproj.GenerateResource.Cache
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\bin\Release\ISBS-New.exe
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\bin\Release\ISBS-New.pdb
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS-New.exe
+E:\Project\ISBS Pak Rafi\trunk\ISBS-New\obj\Release\ISBS-New.pdb
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ResolveAssemblyReference.cache
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Login.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.MainMenu.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.AddressType.AddressTypeForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.AddressType.AddressTypeInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.BankGroup.BankGroupForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.BankGroup.BankGroupInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Bank.BankForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Bank.BankInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.City.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.InqCity.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.CompanyInfo.FormCompanyInfo.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.CompanyInfo.InquiryCompanyInfo.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.ConfigItem.FormConfigItem.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.ConfigItem.InquiryConfigItem.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Counter.Counter.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Counter.InqCounter.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Currency.Currency.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Currency.InqCurrency.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustGroup.CustGroupForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustGroup.CustGroupInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustTable.CustTableForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustTable.CustTableInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.AddItem.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.GelombangForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.GelombangInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Golongan.GolonganForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Golongan.GolonganInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Group.GroupForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Group.GroupInquiry.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Dimension.FormDimension.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Dimension.InquiryDimension.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.InventTable.FormInventTable.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.InventTable.InquiryInventTable.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Measurement.FormMeasurement.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Measurement.InquiryMeasurement.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Site.FormSite.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Site.InquirySite.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup1.FormSubGroup1.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup1.InquirySubGroup1.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup2.FormSubGroup2.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup2.InquirySubGroup2.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Type.FormType.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Type.InquiryType.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Unit.FormUnit.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Unit.InquiryUnit.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.InqItem.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Item.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Manufacturer.InqManufacturer.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Manufacturer.Manufacturer.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Merek.InqMerek.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Merek.Merek.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Payment_Mode.InqPaymentMode.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Payment_Mode.PaymentMode.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.PIC.DashPIC.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.PIC.PIC.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Province.InqProvince.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Province.Province.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Quality.InqQuality.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Quality.Quality.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Spec.InqSpec.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.Spec.Spec.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.TermOfPayment.InqToP.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.TermOfPayment.ToP.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendGroup.InqVendGroup.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendGroup.VendGroup.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendTable.InqVendTable.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendTable.VendTable.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.DashFreeTextInvoice.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.FreeTextInvoiceHeader.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.DashPQ.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.PQHeader.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.DashPriceList.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListEditForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListNewForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.DashReceipt.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.ProductReceiptForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.DashInvoice.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.InvoiceHeader.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.DashPO.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.POHeader.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.DashPR.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.PRHeader.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptDashboard.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptForm.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Properties.Resources.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.DetailPR.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.Gelombang.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.HeaderPR.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.Info.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.InquiryPR.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS_New.Search.resources
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS-New.csproj.GenerateResource.Cache
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\bin\Release\ISBS-New.exe
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\bin\Release\ISBS-New.pdb
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\bin\Release\MetroFramework.Design.dll
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\bin\Release\MetroFramework.dll
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\bin\Release\MetroFramework.Fonts.dll
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS-New.exe
+E:\Project\ISBS Pak Rafi - Copy\trunk\ISBS-New\obj\Release\ISBS-New.pdb
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Login.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.MainMenu.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.AddressType.AddressTypeForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.AddressType.AddressTypeInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Address.AddressForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Address.ContactForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.BankGroup.BankGroupForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.BankGroup.BankGroupInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Bank.BankForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Bank.BankInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.City.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.City.InqCity.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CompanyInfo.FormCompanyInfo.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CompanyInfo.InquiryCompanyInfo.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.ConfigItem.FormConfigItem.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.ConfigItem.InquiryConfigItem.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Counter.Counter.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Counter.InqCounter.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Currency.Currency.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Currency.InqCurrency.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustGroup.CustGroupForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustGroup.CustGroupInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustTable.CustTableForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.CustTable.CustTableInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.AddItem.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.GelombangForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Gelombang.GelombangInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Golongan.GolonganForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Golongan.GolonganInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Group.GroupForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Group.GroupInquiry.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Dimension.FormDimension.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Dimension.InquiryDimension.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.InventTable.FormInventTable.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.InventTable.InquiryInventTable.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Measurement.FormMeasurement.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Measurement.InquiryMeasurement.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Site.FormSite.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Site.InquirySite.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup1.FormSubGroup1.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup1.InquirySubGroup1.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup2.FormSubGroup2.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.SubGroup2.InquirySubGroup2.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Type.FormType.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Type.InquiryType.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Unit.FormUnit.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Invent.Unit.InquiryUnit.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.InqItem.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Item.Item.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Manufacturer.InqManufacturer.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Manufacturer.Manufacturer.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Merek.InqMerek.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Merek.Merek.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Payment_Mode.InqPaymentMode.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Payment_Mode.PaymentMode.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.PIC.DashPIC.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.PIC.PIC.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Province.InqProvince.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Province.Province.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Quality.InqQuality.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Quality.Quality.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Spec.InqSpec.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.Spec.Spec.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.TermOfPayment.InqToP.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.TermOfPayment.ToP.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.GroupMenu.GroupMenuForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Group.GroupForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Menu.MenuForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.UserGroup.UserGroupForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.User.Username.UsernameForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendGroup.InqVendGroup.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendGroup.VendGroup.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendTable.InqVendTable.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Master.VendTable.VendTable.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.DashFreeTextInvoice.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.APFreeTextInvoice.FreeTextInvoiceHeader.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.DebitNote.DebitNoteForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.DashPQ.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PreQuotation.PQHeader.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.DashPriceList.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListEditForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PriceList.PriceListNewForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.DashReceipt.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ProductReceipt.ProductReceiptForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.DashInvoice.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseInvoice.InvoiceHeader.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.DashPO.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseOrder.POHeader.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.DashPR.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.PurchaseRequistition.PRHeader.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptDashboard.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Pembelian.ReturProductReceipt.ReturProductReceiptForm.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Properties.Resources.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisitionApproval.HeaderPRApproval.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisitionApproval.InquiryPRApproval.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.DetailPR.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.Gelombang.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.HeaderPR.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.Info.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Purchase.PurchaseRequisition.InquiryPR.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS_New.Search.resources
+C:\Billy\project\PakRafi\trunk\ISBS-New\obj\Release\ISBS-New.csproj.GenerateResource.Cache

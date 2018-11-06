@@ -1,0 +1,337 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+
+namespace ISBS_New.Master.Item
+{
+    public partial class InqItem : Form
+    {
+        private SqlConnection Conn;
+        private SqlCommand Cmd;
+        private SqlTransaction Trans;
+        private SqlDataReader Dr;
+        private SqlDataAdapter Da;
+        private DataTable Dt;
+        private DataSet Ds;
+
+        String Mode, Query, crit = null;
+        int Limit1, Limit2, Total, Page1, Page2, Index;
+
+        public InqItem()
+        {
+            InitializeComponent();
+        }
+
+        private void InqItem_Load(object sender, EventArgs e)
+        {
+            addCmbCrit();
+            ModeLoad();
+            this.Location = new Point(148, 47);
+        }
+
+        public void RefreshGrid()
+        {
+            //Menampilkan data
+            Conn = ConnectionString.GetConnection();
+            if (crit == null)
+            {
+                Query = "Select * From (Select ROW_NUMBER() OVER (ORDER BY ItemId) No, ItemId, ItemDeskripsi From [dbo].[Item]) a ";
+                Query += "Where No Between " + Limit1 + " and " + Limit2 + " ;";
+            }
+            else if (crit.Equals("All"))
+            {
+                Query = "Select * From (Select ROW_NUMBER() OVER (ORDER BY ItemId) No, ItemId, ItemDeskripsi From [dbo].[Item] Where ItemId Like '%" + txtSearch.Text + "%' or ItemDeskripsi Like '%" + txtSearch.Text + "%' ";
+                Query += ") a ";
+                Query += "Where No Between " + Limit1 + " and " + Limit2 + " ;";
+            }
+            else
+            {
+                Query = "Select * From (Select ROW_NUMBER() OVER (ORDER BY ItemId) No, ItemId, ItemDeskripsi From [dbo].[Item] Where " + crit + " Like '%" + txtSearch.Text + "%') a ";
+                Query += "Where No Between " + Limit1 + " and " + Limit2 + " ;";
+            }
+
+            Da = new SqlDataAdapter(Query, Conn);
+            Dt = new DataTable();
+            Da.Fill(Dt);
+
+            dgvItem.AutoGenerateColumns = true;
+            dgvItem.DataSource = Dt;
+            dgvItem.Refresh();
+            dgvItem.AutoResizeColumns();
+            Conn.Close();
+
+            //Mengambil nilai total paging
+            Conn = ConnectionString.GetConnection();
+
+            if (crit == null)
+            {
+                Query = "Select Count(*) From [dbo].[Item]";
+            }
+            else if (crit.Equals("All"))
+            {
+                Query = "Select Count(*) From (Select ROW_NUMBER() OVER (ORDER BY ItemId) No, ItemId, ItemDeskripsi From [dbo].[Item] Where ItemId Like '%" + txtSearch.Text + "%' or ItemDeskripsi Like '%" + txtSearch.Text + "%' ";
+                Query += ") a ";
+                Query += "Where No Between " + Limit1 + " and " + Limit2 + " ;";
+            }
+            else
+            {
+                Query = "Select Count(*) From [dbo].[Item] Where " + crit + " Like '%" + txtSearch.Text + "%'";
+            }
+
+            Cmd = new SqlCommand(Query, Conn);
+            Total = Int32.Parse(Cmd.ExecuteScalar().ToString());
+            Conn.Close();
+
+            lblTotal.Text = "Total Rows : " + Total.ToString();
+            Page2 = (int)Math.Ceiling((decimal)Total / Int32.Parse(cmbShow.Text)) == 0 ? 1 : (int)Math.Ceiling((decimal)Total / Int32.Parse(cmbShow.Text));
+            lblPage.Text = "/ " + Page2;
+
+        }
+
+        private void addCmbCrit()
+        {
+            cmbCriteria.Items.Add("All");
+            Conn = ConnectionString.GetConnection();
+            Query = "Select FieldName From [User].[Table] Where TableName = 'Item'";
+
+            Cmd = new SqlCommand(Query, Conn);
+            Dr = Cmd.ExecuteReader();
+
+            while (Dr.Read())
+            {
+                cmbCriteria.Items.Add(Dr[0]);
+            }
+            Conn.Close();
+        }
+
+        private void ModeLoad()
+        {
+            Limit1 = 1;
+            if (cmbShow.Text == "")
+            {
+                cmbShow.Text = "5";
+            }
+            else
+                cmbShow.Text = cmbShow.Text;
+            Limit2 = Int32.Parse(cmbShow.Text);
+            Page1 = 1;
+            txtPage.Text = "1";
+
+            cmbShowLoad();
+            RefreshGrid();
+        }
+
+        private void btnMPrev_Click(object sender, EventArgs e)
+        {
+            txtPage.Text = "1";
+            Limit1 = (Int32.Parse(txtPage.Text) - 1) * Int32.Parse(cmbShow.Text) + 1;
+            Limit2 = Int32.Parse(txtPage.Text) * Int32.Parse(cmbShow.Text);
+            RefreshGrid();
+        }
+
+        private void btnPrev_Click(object sender, EventArgs e)
+        {
+            if (Limit2 - Int32.Parse(cmbShow.Text) >= 1)
+            {
+                Limit1 -= Int32.Parse(cmbShow.Text);
+                Limit2 -= Int32.Parse(cmbShow.Text);
+                txtPage.Text = (Int32.Parse(txtPage.Text) - 1).ToString();
+            }
+            RefreshGrid();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (Limit1 + Int32.Parse(cmbShow.Text) <= Total)
+            {
+                Limit1 += Int32.Parse(cmbShow.Text);
+                Limit2 += Int32.Parse(cmbShow.Text);
+                txtPage.Text = (Int32.Parse(txtPage.Text) + 1).ToString();
+            }
+            RefreshGrid();
+        }
+
+        private void btnMNext_Click(object sender, EventArgs e)
+        {
+            txtPage.Text = Math.Ceiling((decimal)Total / Int32.Parse(cmbShow.Text)).ToString();
+            Limit1 = (Int32.Parse(txtPage.Text) - 1) * Int32.Parse(cmbShow.Text) + 1;
+            Limit2 = Int32.Parse(txtPage.Text) * Int32.Parse(cmbShow.Text);
+            RefreshGrid();
+        }
+
+        private void txtPage_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                Limit1 = (Int32.Parse(txtPage.Text) - 1) * Int32.Parse(cmbShow.Text) + 1;
+                Limit2 = Int32.Parse(txtPage.Text) * Int32.Parse(cmbShow.Text);
+                RefreshGrid();
+            }
+        }
+
+        private void cmbShow_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                Limit1 = (Int32.Parse(txtPage.Text) - 1) * Int32.Parse(cmbShow.Text) + 1;
+                Limit2 = Int32.Parse(txtPage.Text) * Int32.Parse(cmbShow.Text);
+                txtPage.Text = "1";
+                RefreshGrid();
+            }
+        }
+
+        private void cmbShow_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtPage.Text = "1";
+            Limit1 = (Int32.Parse(txtPage.Text) - 1) * Int32.Parse(cmbShow.Text) + 1;
+            Limit2 = Int32.Parse(txtPage.Text) * Int32.Parse(cmbShow.Text);
+            RefreshGrid();
+        }
+
+        private void cmbShowLoad()
+        {
+            Conn = ConnectionString.GetConnection();
+            Query = "Select CmbValue From [Setting].[CmbBox] ";
+
+            Cmd = new SqlCommand(Query, Conn);
+            Dr = Cmd.ExecuteReader();
+            cmbShow.Items.Clear();
+            while (Dr.Read())
+            {
+                cmbShow.Items.Add(Dr.GetInt32(0));
+            }
+            Conn.Close();
+
+            Conn = ConnectionString.GetConnection();
+            SqlCommand Cmd1 = new SqlCommand(Query, Conn);
+            Total = Int32.Parse(Cmd1.ExecuteScalar().ToString());
+            Conn.Close();
+
+            cmbShow.SelectedIndex = 0;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvItem.RowCount > 0)
+                {
+                    Index = dgvItem.CurrentRow.Index;
+                    String ItemId = dgvItem.Rows[Index].Cells["ItemId"].Value == null ? "" : dgvItem.Rows[Index].Cells["ItemId"].Value.ToString();
+                    String ItemDeskripsi = dgvItem.Rows[Index].Cells["ItemDeskripsi"].Value == null ? "" : dgvItem.Rows[Index].Cells["ItemDeskripsi"].Value.ToString();
+
+                    DialogResult dr = MessageBox.Show("Item ID = " + ItemId.ToUpper() + "\n" + "Item Deskripsi = " + ItemDeskripsi.ToUpper() + "\n" + "Apakah data diatas akan dihapus ?", "Konfirmasi", MessageBoxButtons.YesNo);
+                    if (dr == DialogResult.Yes)
+                    {
+                        Conn = ConnectionString.GetConnection();
+                        Query = "Delete from [dbo].[Item] where ItemId='" + ItemId + "' And ItemDeskripsi='" + ItemDeskripsi + "'";
+
+                        Cmd = new SqlCommand(Query, Conn);
+                        Cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("Item ID = " + ItemId.ToUpper() + "\n" + "Data berhasil dihapus.");
+
+                        Index = 0;
+                        Conn.Close();
+                        RefreshGrid();
+                    }
+
+                }
+            }
+            catch (Exception exx)
+            {
+                MessageBox.Show(exx.Message);
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text == null || txtSearch.Text.Equals(""))
+            {
+                MessageBox.Show("Masukkan Kata Kunci");
+            }
+            else if (cmbCriteria.SelectedIndex == -1)
+            {
+                crit = "All";
+            }
+            else
+            {
+                crit = cmbCriteria.SelectedItem.ToString();
+            }
+
+            RefreshGrid();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            crit = null;
+            txtSearch.Text = "";
+            ModeLoad();
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            Item F = new Item();
+            F.flag("", "", "New");
+            F.ShowDialog();
+            RefreshGrid();
+        }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            String ItemId = dgvItem.CurrentRow.Cells["ItemId"].Value.ToString();
+            String ItemDeskripsi = dgvItem.CurrentRow.Cells["ItemDeskripsi"].Value.ToString();
+
+            Item F = new Item();
+            F.flag(ItemId, ItemDeskripsi, "Edit");
+            F.ShowDialog();
+            RefreshGrid();
+        }
+
+        private void dgvItem_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex > -1)
+            {
+                String ItemId = dgvItem.Rows[e.RowIndex].Cells["ItemId"].Value.ToString();
+                String ItemDeskripsi = dgvItem.Rows[e.RowIndex].Cells["ItemDeskripsi"].Value.ToString();
+
+                Item F = new Item();
+                F.flag(ItemId, ItemDeskripsi, "Edit");
+                F.ShowDialog();
+                RefreshGrid();
+            }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                if (txtSearch.Text == null || txtSearch.Text.Equals(""))
+                {
+                    MessageBox.Show("Masukkan Kata Kunci");
+                }
+                else if (cmbCriteria.SelectedIndex == -1)
+                {
+                    crit = "All";
+                }
+                else
+                {
+                    crit = cmbCriteria.SelectedItem.ToString();
+                }
+
+                RefreshGrid();
+            }
+        }
+    }
+}

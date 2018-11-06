@@ -1,0 +1,3545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6C704C6-14B5-4B07-ACB9-5151949D0D72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ISBS_New</RootNamespace>
+    <AssemblyName>ISBS-New</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>ISBS_New.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.3.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NPOI, Version=1.2.4.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.31.1789.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessRight\AccessRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessRight\AccessRight.Designer.cs">
+      <DependentUpon>AccessRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessRight\StringCipher.cs" />
+    <Compile Include="AccessRight\UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessRight\UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountAssignment\FormCOA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAssignment\FormCOA.Designer.cs">
+      <DependentUpon>FormCOA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountAssignment\FormCOAMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAssignment\FormCOAMaster.Designer.cs">
+      <DependentUpon>FormCOAMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountAssignment\FormFQA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAssignment\FormFQA.Designer.cs">
+      <DependentUpon>FormFQA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountAssignment\FormFQA2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAssignment\FormFQA2.Designer.cs">
+      <DependentUpon>FormFQA2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountAssignment\GLJournal\FormGLJournalHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAssignment\GLJournal\FormGLJournalHeader.Designer.cs">
+      <DependentUpon>FormGLJournalHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountAssignment\JournalType\FormJournal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountAssignment\JournalType\FormJournal.Designer.cs">
+      <DependentUpon>FormJournal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\AddNewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\AddNewItem.Designer.cs">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\HeaderAccountsPayable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\HeaderAccountsPayable.Designer.cs">
+      <DependentUpon>HeaderAccountsPayable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\InquiryAccountPayableApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\InquiryAccountPayableApproval.Designer.cs">
+      <DependentUpon>InquiryAccountPayableApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\InquiryAccountsPayable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\InquiryAccountsPayable.Designer.cs">
+      <DependentUpon>InquiryAccountsPayable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\InvoicePayment\InvoicePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\InvoicePayment\InvoicePayment.Designer.cs">
+      <DependentUpon>InvoicePayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\InvoicePayment\Testing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\InvoicePayment\Testing.Designer.cs">
+      <DependentUpon>Testing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\Payment Voucher\PaymentVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\Payment Voucher\PaymentVoucher.Designer.cs">
+      <DependentUpon>PaymentVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\Payment Voucher\PaymentVoucherGiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\Payment Voucher\PaymentVoucherGiro.Designer.cs">
+      <DependentUpon>PaymentVoucherGiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountPayable\Rpt_AP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\Rpt_PV_Cash.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\Rpt_PV_Cheque.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccountPayable\Rpt_PV_Transfer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AccountsReceivable\CustomerInvoice\AddNewItemSOGI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsReceivable\CustomerInvoice\AddNewItemSOGI.Designer.cs">
+      <DependentUpon>AddNewItemSOGI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsReceivable\CustomerInvoice\HeaderCustomerInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsReceivable\CustomerInvoice\HeaderCustomerInvoice.Designer.cs">
+      <DependentUpon>HeaderCustomerInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsReceivable\CustomerInvoice\InquiryCustomerInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsReceivable\CustomerInvoice\InquiryCustomerInvoice.Designer.cs">
+      <DependentUpon>InquiryCustomerInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsReceivable\ReceiptVoucher\HeaderReceiptVoucher .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountsReceivable\ReceiptVoucher\HeaderReceiptVoucher .Designer.cs">
+      <DependentUpon>HeaderReceiptVoucher .cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\ARCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\ARCollectionForm.Designer.cs">
+      <DependentUpon>ARCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\ARCollectionInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\ARCollectionInquiry.Designer.cs">
+      <DependentUpon>ARCollectionInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\CollectionResult\CLR_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\CollectionResult\CLR_Form.Designer.cs">
+      <DependentUpon>CLR_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\CollectionResult\CLR_Inquery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\CollectionResult\CLR_Inquery.Designer.cs">
+      <DependentUpon>CLR_Inquery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\Collection\CollectionHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Collection\CollectionHeader.Designer.cs">
+      <DependentUpon>CollectionHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\Collection\CollectionPopUpInputMailAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Collection\CollectionPopUpInputMailAddress.Designer.cs">
+      <DependentUpon>CollectionPopUpInputMailAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\Collection\CollectionTaskList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Collection\CollectionTaskList.Designer.cs">
+      <DependentUpon>CollectionTaskList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\Collection\PreviewCollectionPrintOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Collection\PreviewCollectionPrintOut.Designer.cs">
+      <DependentUpon>PreviewCollectionPrintOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\Collection\PrintOut3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintOut.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Collection\PrintOutMail1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintOutMail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Kwitansi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\Kwitansi.Designer.cs">
+      <DependentUpon>Kwitansi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\Rpt_CL4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_CL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ARCollection\SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\SendEmail.Designer.cs">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ARCollection\TandaTerimaInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARCollection\TandaTerimaInquiry.Designer.cs">
+      <DependentUpon>TandaTerimaInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authority\SetAuthority.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authority\SetAuthority.Designer.cs">
+      <DependentUpon>SetAuthority.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bookmark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookmark.Designer.cs">
+      <DependentUpon>Bookmark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAndBank\BankReconcile\BankReconcile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAndBank\BankReconcile\BankReconcile.Designer.cs">
+      <DependentUpon>BankReconcile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAndBank\BankStatement\HeaderBankStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAndBank\BankStatement\HeaderBankStatement.Designer.cs">
+      <DependentUpon>HeaderBankStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAndBank\BankStatement\InquiryBankStatement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAndBank\BankStatement\InquiryBankStatement.Designer.cs">
+      <DependentUpon>InquiryBankStatement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAndBank\ReceiptVoucher\HeaderReceiptVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAndBank\ReceiptVoucher\HeaderReceiptVoucher.Designer.cs">
+      <DependentUpon>HeaderReceiptVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashAndBank\ReceiptVoucher\InquiryReceiptVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashAndBank\ReceiptVoucher\InquiryReceiptVoucher.Designer.cs">
+      <DependentUpon>InquiryReceiptVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionString.cs" />
+    <Compile Include="EFaktur\EFaktur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFaktur\EFaktur.Designer.cs">
+      <DependentUpon>EFaktur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFaktur\InvoiceAP.cs" />
+    <Compile Include="EFaktur\InvoiceAR.cs" />
+    <Compile Include="Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filter.Designer.cs">
+      <DependentUpon>Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalInquiry.Designer.cs">
+      <DependentUpon>GlobalInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalPreview.Designer.cs">
+      <DependentUpon>GlobalPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalSendEmail.Designer.cs">
+      <DependentUpon>GlobalSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InquiryV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InquiryV1.Designer.cs">
+      <DependentUpon>InquiryV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InquiryV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InquiryV2.Designer.cs">
+      <DependentUpon>InquiryV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Bentuk\FrmL_Bentuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Bentuk\FrmL_Bentuk.Designer.cs">
+      <DependentUpon>FrmL_Bentuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Bentuk\FrmM_Bentuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Bentuk\FrmM_Bentuk.Designer.cs">
+      <DependentUpon>FrmM_Bentuk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\FrmM_ResizeMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\FrmM_ResizeMapping.Designer.cs">
+      <DependentUpon>FrmM_ResizeMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\InventTableHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\InventTableHeader.Designer.cs">
+      <DependentUpon>InventTableHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Inventory\FrmL_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Inventory\FrmL_Inventory.Designer.cs">
+      <DependentUpon>FrmL_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Inventory\FrmM_Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Inventory\FrmM_Inventory.Designer.cs">
+      <DependentUpon>FrmM_Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Inventory\FrmPop_NewItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Inventory\FrmPop_NewItem.Designer.cs">
+      <DependentUpon>FrmPop_NewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\KodeBerat\FormKodeBerat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\KodeBerat\FormKodeBerat.Designer.cs">
+      <DependentUpon>FormKodeBerat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\KodeBerat\InquiryKodeBerat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\KodeBerat\InquiryKodeBerat.Designer.cs">
+      <DependentUpon>InquiryKodeBerat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\TagSize\FormTagSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\TagSize\FormTagSize.Designer.cs">
+      <DependentUpon>FormTagSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\TagSize\InquiryTagSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\TagSize\InquiryTagSize.Designer.cs">
+      <DependentUpon>InquiryTagSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NotaAdjustment\HeaderNotaAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\NotaAdjustment\HeaderNotaAdjust.Designer.cs">
+      <DependentUpon>HeaderNotaAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NotaAdjustment\InquiryNotaAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\NotaAdjustment\InquiryNotaAdjust.Designer.cs">
+      <DependentUpon>InquiryNotaAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NotaAdjustment\SearchItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\NotaAdjustment\SearchItem.Designer.cs">
+      <DependentUpon>SearchItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NotaTransfer\NTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\NotaTransfer\NTForm.Designer.cs">
+      <DependentUpon>NTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NotaTransfer\NT_Inquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\NotaTransfer\NT_Inquiry.Designer.cs">
+      <DependentUpon>NT_Inquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\NotaTransfer\PopUpDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\NotaTransfer\PopUpDetail.Designer.cs">
+      <DependentUpon>PopUpDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\StockView\StockViewHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\StockView\StockViewHeader.Designer.cs">
+      <DependentUpon>StockViewHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListMethod.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Address\FrmL_AddressType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Address\FrmL_AddressType.Designer.cs">
+      <DependentUpon>FrmL_AddressType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Address\FrmM_AddressType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Address\FrmM_AddressType.Designer.cs">
+      <DependentUpon>FrmM_AddressType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\BankGroup\BankGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\BankGroup\BankGroupForm.Designer.cs">
+      <DependentUpon>BankGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\BankGroup\FrmL_BankGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\BankGroup\FrmL_BankGroup.Designer.cs">
+      <DependentUpon>FrmL_BankGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\BankGroup\FrmM_BankGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\BankGroup\FrmM_BankGroup.Designer.cs">
+      <DependentUpon>FrmM_BankGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Bank\BankForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Bank\BankForm.Designer.cs">
+      <DependentUpon>BankForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Bank\FrmL_Bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Bank\FrmL_Bank.Designer.cs">
+      <DependentUpon>FrmL_Bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Bank\FrmM_Bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Bank\FrmM_Bank.Designer.cs">
+      <DependentUpon>FrmM_Bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CompanyInfo\FormCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\CompanyInfo\FormCompanyInfo.Designer.cs">
+      <DependentUpon>FormCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\CompanyInfo\InquiryCompanyInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\CompanyInfo\InquiryCompanyInfo.Designer.cs">
+      <DependentUpon>InquiryCompanyInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\ConfigItem\FormConfigItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\ConfigItem\FormConfigItem.Designer.cs">
+      <DependentUpon>FormConfigItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\ConfigItem\InquiryConfigItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\ConfigItem\InquiryConfigItem.Designer.cs">
+      <DependentUpon>InquiryConfigItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Contact\FrmL_ContactType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Contact\FrmL_ContactType.Designer.cs">
+      <DependentUpon>FrmL_ContactType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Contact\FrmM_ContactType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Contact\FrmM_ContactType.Designer.cs">
+      <DependentUpon>FrmM_ContactType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Counter\Counter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Counter\Counter.Designer.cs">
+      <DependentUpon>Counter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Currency\Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Currency\Currency.Designer.cs">
+      <DependentUpon>Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Currency\FrmL_Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Currency\FrmL_Currency.Designer.cs">
+      <DependentUpon>FrmL_Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Customer\FrmL_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Customer\FrmL_Customer.Designer.cs">
+      <DependentUpon>FrmL_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Customer\FrmM_Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Customer\FrmM_Customer.Designer.cs">
+      <DependentUpon>FrmM_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Address\FrmPop_Address.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Address\FrmPop_Address.Designer.cs">
+      <DependentUpon>FrmPop_Address.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Contact\FrmPop_Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Contact\FrmPop_Contact.Designer.cs">
+      <DependentUpon>FrmPop_Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Customer\FrmPop_NewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Customer\FrmPop_NewCustomer.Designer.cs">
+      <DependentUpon>FrmPop_NewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\DeliveryMethod\DeliveryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\DeliveryMethod\DeliveryForm.Designer.cs">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ExchangeRate\ExchangeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ExchangeRate\ExchangeRate.Designer.cs">
+      <DependentUpon>ExchangeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Gelombang\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Gelombang\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Gelombang\GelombangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Gelombang\GelombangForm.Designer.cs">
+      <DependentUpon>GelombangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Gelombang\GelombangInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Gelombang\GelombangInquiry.Designer.cs">
+      <DependentUpon>GelombangInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Golongan\GolonganForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Golongan\GolonganForm.Designer.cs">
+      <DependentUpon>GolonganForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Golongan\GolonganInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Golongan\GolonganInquiry.Designer.cs">
+      <DependentUpon>GolonganInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Golongan\FrmL_GolPrsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Golongan\FrmL_GolPrsh.Designer.cs">
+      <DependentUpon>FrmL_GolPrsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Golongan\FrmM_GolPrsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Golongan\FrmM_GolPrsh.Designer.cs">
+      <DependentUpon>FrmM_GolPrsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Gol_Prsh\FrmL_Gol_Prsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Gol_Prsh\FrmL_Gol_Prsh.Designer.cs">
+      <DependentUpon>FrmL_Gol_Prsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Gol_Prsh\FrmM_Gol_Prsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Gol_Prsh\FrmM_Gol_Prsh.Designer.cs">
+      <DependentUpon>FrmM_Gol_Prsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Group\GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Group\GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Group\GroupInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Group\GroupInquiry.Designer.cs">
+      <DependentUpon>GroupInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Dimension\FormDimension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Dimension\FormDimension.Designer.cs">
+      <DependentUpon>FormDimension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Dimension\InquiryDimension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Dimension\InquiryDimension.Designer.cs">
+      <DependentUpon>InquiryDimension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\FormInventTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\FormInventTable.Designer.cs">
+      <DependentUpon>FormInventTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\HdrResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\HdrResize.Designer.cs">
+      <DependentUpon>HdrResize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\HeaderResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\HeaderResize.Designer.cs">
+      <DependentUpon>HeaderResize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\InquiryInventTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\InquiryInventTable.Designer.cs">
+      <DependentUpon>InquiryInventTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\InquiryResize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\InquiryResize.Designer.cs">
+      <DependentUpon>InquiryResize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\PopUpConversion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\PopUpConversion.Designer.cs">
+      <DependentUpon>PopUpConversion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\PopUpInvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\InvantTable\PopUpInvent.Designer.cs">
+      <DependentUpon>PopUpInvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Measurement\FormMeasurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Measurement\FormMeasurement.Designer.cs">
+      <DependentUpon>FormMeasurement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Measurement\InquiryMeasurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Measurement\InquiryMeasurement.Designer.cs">
+      <DependentUpon>InquiryMeasurement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ItemDP\FrmL_ItemDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ItemDP\FrmL_ItemDP.Designer.cs">
+      <DependentUpon>FrmL_ItemDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\ItemDP\FrmM_ItemDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\ItemDP\FrmM_ItemDP.Designer.cs">
+      <DependentUpon>FrmM_ItemDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PricelistConfig\LooupSubGroup2ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PricelistConfig\LooupSubGroup2ID.Designer.cs">
+      <DependentUpon>LooupSubGroup2ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PricelistConfig\PricelistConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PricelistConfig\PricelistConfigForm.Designer.cs">
+      <DependentUpon>PricelistConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PricelistConfig\PricelistConfigInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PricelistConfig\PricelistConfigInquiry.Designer.cs">
+      <DependentUpon>PricelistConfigInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site\FormSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Site\FormSite.Designer.cs">
+      <DependentUpon>FormSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site\InquirySite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Site\InquirySite.Designer.cs">
+      <DependentUpon>InquirySite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup1\FormSubGroup1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup1\FormSubGroup1.Designer.cs">
+      <DependentUpon>FormSubGroup1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup1\InquirySubGroup1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup1\InquirySubGroup1.Designer.cs">
+      <DependentUpon>InquirySubGroup1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup2\FormSubGroup2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup2\FormSubGroup2.Designer.cs">
+      <DependentUpon>FormSubGroup2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup2\InquirySubGroup2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\SubGroup2\InquirySubGroup2.Designer.cs">
+      <DependentUpon>InquirySubGroup2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Type\FormType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Type\FormType.Designer.cs">
+      <DependentUpon>FormType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Type\InquiryType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Type\InquiryType.Designer.cs">
+      <DependentUpon>InquiryType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Unit\FormUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Unit\FormUnit.Designer.cs">
+      <DependentUpon>FormUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Unit\InquiryUnit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Unit\InquiryUnit.Designer.cs">
+      <DependentUpon>InquiryUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Kota\FrmL_Kota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Kota\FrmL_Kota.Designer.cs">
+      <DependentUpon>FrmL_Kota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Kota\FrmM_Kota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Kota\FrmM_Kota.Designer.cs">
+      <DependentUpon>FrmM_Kota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Manufacturer\InqManufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Manufacturer\InqManufacturer.Designer.cs">
+      <DependentUpon>InqManufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Manufacturer\Manufacturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Manufacturer\Manufacturer.Designer.cs">
+      <DependentUpon>Manufacturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Merek\InqMerek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Merek\InqMerek.Designer.cs">
+      <DependentUpon>InqMerek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Merek\Merek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Merek\Merek.Designer.cs">
+      <DependentUpon>Merek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Payment Mode\PaymentMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Payment Mode\PaymentMode.Designer.cs">
+      <DependentUpon>PaymentMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PIC\DashPIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PIC\DashPIC.Designer.cs">
+      <DependentUpon>DashPIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\PIC\PIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\PIC\PIC.Designer.cs">
+      <DependentUpon>PIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Quality\InqQuality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Quality\InqQuality.Designer.cs">
+      <DependentUpon>InqQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Quality\Quality.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Quality\Quality.Designer.cs">
+      <DependentUpon>Quality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Rekening\FrmPop_Rekening.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Rekening\FrmPop_Rekening.Designer.cs">
+      <DependentUpon>FrmPop_Rekening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Sales\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Sales\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Spec\InqSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Spec\InqSpec.Designer.cs">
+      <DependentUpon>InqSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory\Master\Spec\Spec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory\Master\Spec\Spec.Designer.cs">
+      <DependentUpon>Spec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site\SiteBlok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Site\SiteBlok.Designer.cs">
+      <DependentUpon>SiteBlok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Site\SiteBlokInq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Site\SiteBlokInq.Designer.cs">
+      <DependentUpon>SiteBlokInq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\TermOfPayment\ToP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\TermOfPayment\ToP.Designer.cs">
+      <DependentUpon>ToP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\GroupMenu\GroupMenuDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\GroupMenu\GroupMenuDashboard.Designer.cs">
+      <DependentUpon>GroupMenuDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\GroupMenu\GroupMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\GroupMenu\GroupMenuForm.Designer.cs">
+      <DependentUpon>GroupMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\Group\GroupDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\Group\GroupDashboard.Designer.cs">
+      <DependentUpon>GroupDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\Group\GroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\Group\GroupForm.Designer.cs">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\Menu\MenuDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\Menu\MenuDashboard.Designer.cs">
+      <DependentUpon>MenuDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\Menu\MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\Menu\MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\UserGroup\UserGroupDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\UserGroup\UserGroupDashboard.Designer.cs">
+      <DependentUpon>UserGroupDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\UserGroup\UserGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\UserGroup\UserGroupForm.Designer.cs">
+      <DependentUpon>UserGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\Username\UsernameDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\Username\UsernameDashboard.Designer.cs">
+      <DependentUpon>UsernameDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\User\Username\UsernameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\User\Username\UsernameForm.Designer.cs">
+      <DependentUpon>UsernameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Vendor\FrmL_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Vendor\FrmL_Vendor.Designer.cs">
+      <DependentUpon>FrmL_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Vendor\FrmM_Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Vendor\FrmM_Vendor.Designer.cs">
+      <DependentUpon>FrmM_Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Vendor\FrmPop_NewVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Vendor\FrmPop_NewVendor.Designer.cs">
+      <DependentUpon>FrmPop_NewVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Methods\Connection.cs" />
+    <Compile Include="Methods\ControlMgr.cs" />
+    <Compile Include="Methods\Mandatory.cs" />
+    <Compile Include="Methods\Method.cs" />
+    <Compile Include="Methods\Validation.cs" />
+    <Compile Include="Methods\Variable.cs" />
+    <Compile Include="PopUpSelect\Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUpSelect\Vendor.Designer.cs">
+      <DependentUpon>Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Attachment\Attachment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\Attachment\Attachment.Designer.cs">
+      <DependentUpon>Attachment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Contact\Frm_Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\Contact\Frm_Contact.Designer.cs">
+      <DependentUpon>Frm_Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\CustomerID\CustomerId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\CustomerID\CustomerId.Designer.cs">
+      <DependentUpon>CustomerId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Customer\Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\Customer\Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\FrmSearchMgr\FrmSearchMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\FrmSearchMgr\FrmSearchMgr.Designer.cs">
+      <DependentUpon>FrmSearchMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\FullItemId\FullItemId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\FullItemId\FullItemId.Designer.cs">
+      <DependentUpon>FullItemId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\InventSiteID\InventSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\InventSiteID\InventSite.Designer.cs">
+      <DependentUpon>InventSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Item\Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\Item\Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\MoUCustomerId\MoUId.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\MoUCustomerId\MoUId.Designer.cs">
+      <DependentUpon>MoUId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\PriceListBeli\PriceListBeli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\PriceListBeli\PriceListBeli.Designer.cs">
+      <DependentUpon>PriceListBeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\PriceListJual\PriceListJual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\PriceListJual\PriceListJual.Designer.cs">
+      <DependentUpon>PriceListJual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\SalesOrder\SalesOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\SalesOrder\SalesOrder.Designer.cs">
+      <DependentUpon>SalesOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\SalesOrder\SODetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\SalesOrder\SODetail.Designer.cs">
+      <DependentUpon>SODetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Stock\Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\Stock\Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\User\User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\User\User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\VendorReference\VendorReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\VendorReference\VendorReference.Designer.cs">
+      <DependentUpon>VendorReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp\Vendor\Vendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopUp\Vendor\Vendor.Designer.cs">
+      <DependentUpon>Vendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist\LookupCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricelist\LookupCustomer.Designer.cs">
+      <DependentUpon>LookupCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist\LookupReferenceDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricelist\LookupReferenceDoc.Designer.cs">
+      <DependentUpon>LookupReferenceDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist\LookupVendorReference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricelist\LookupVendorReference.Designer.cs">
+      <DependentUpon>LookupVendorReference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist\PricelistHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricelist\PricelistHeader.Designer.cs">
+      <DependentUpon>PricelistHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist\PricelistInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricelist\PricelistInquiry.Designer.cs">
+      <DependentUpon>PricelistInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pricelist\SubGroupHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pricelist\SubGroupHeader.Designer.cs">
+      <DependentUpon>SubGroupHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccessRight\AccessRight.resx">
+      <DependentUpon>AccessRight.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessRight\UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountAssignment\FormCOA.resx">
+      <DependentUpon>FormCOA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountAssignment\FormCOAMaster.resx">
+      <DependentUpon>FormCOAMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountAssignment\FormFQA.resx">
+      <DependentUpon>FormFQA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountAssignment\FormFQA2.resx">
+      <DependentUpon>FormFQA2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountAssignment\GLJournal\FormGLJournalHeader.resx">
+      <DependentUpon>FormGLJournalHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountAssignment\JournalType\FormJournal.resx">
+      <DependentUpon>FormJournal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\AddNewItem.resx">
+      <DependentUpon>AddNewItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\HeaderAccountsPayable.resx">
+      <DependentUpon>HeaderAccountsPayable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\InquiryAccountPayableApproval.resx">
+      <DependentUpon>InquiryAccountPayableApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\InquiryAccountsPayable.resx">
+      <DependentUpon>InquiryAccountsPayable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\InvoicePayment\InvoicePayment.resx">
+      <DependentUpon>InvoicePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\InvoicePayment\Testing.resx">
+      <DependentUpon>Testing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\Payment Voucher\PaymentVoucher.resx">
+      <DependentUpon>PaymentVoucher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\Payment Voucher\PaymentVoucherGiro.resx">
+      <DependentUpon>PaymentVoucherGiro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\Rpt_AP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_AP1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\Rpt_PV_Cash.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_PV_Cash1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\Rpt_PV_Cheque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_PV_Cheque1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountPayable\Rpt_PV_Transfer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_PV_Transfer1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsReceivable\CustomerInvoice\AddNewItemSOGI.resx">
+      <DependentUpon>AddNewItemSOGI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsReceivable\CustomerInvoice\HeaderCustomerInvoice.resx">
+      <DependentUpon>HeaderCustomerInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsReceivable\CustomerInvoice\InquiryCustomerInvoice.resx">
+      <DependentUpon>InquiryCustomerInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsReceivable\ReceiptVoucher\HeaderReceiptVoucher .resx">
+      <DependentUpon>HeaderReceiptVoucher .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\ARCollectionForm.resx">
+      <DependentUpon>ARCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\ARCollectionInquiry.resx">
+      <DependentUpon>ARCollectionInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\CollectionResult\CLR_Form.resx">
+      <DependentUpon>CLR_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\CollectionResult\CLR_Inquery.resx">
+      <DependentUpon>CLR_Inquery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Collection\CollectionHeader.resx">
+      <DependentUpon>CollectionHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Collection\CollectionPopUpInputMailAddress.resx">
+      <DependentUpon>CollectionPopUpInputMailAddress.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Collection\CollectionTaskList.resx">
+      <DependentUpon>CollectionTaskList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Collection\PreviewCollectionPrintOut.resx">
+      <DependentUpon>PreviewCollectionPrintOut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Collection\PrintOut.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintOut3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Collection\PrintOutMail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PrintOutMail1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Kwitansi.resx">
+      <DependentUpon>Kwitansi.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\Rpt_CL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_CL4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\SendEmail.resx">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ARCollection\TandaTerimaInquiry.resx">
+      <DependentUpon>TandaTerimaInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authority\SetAuthority.resx">
+      <DependentUpon>SetAuthority.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookmark.resx">
+      <DependentUpon>Bookmark.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAndBank\BankReconcile\BankReconcile.resx">
+      <DependentUpon>BankReconcile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAndBank\BankStatement\HeaderBankStatement.resx">
+      <DependentUpon>HeaderBankStatement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAndBank\BankStatement\InquiryBankStatement.resx">
+      <DependentUpon>InquiryBankStatement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAndBank\ReceiptVoucher\HeaderReceiptVoucher.resx">
+      <DependentUpon>HeaderReceiptVoucher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashAndBank\ReceiptVoucher\InquiryReceiptVoucher.resx">
+      <DependentUpon>InquiryReceiptVoucher.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EFaktur\EFaktur.resx">
+      <DependentUpon>EFaktur.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filter.resx">
+      <DependentUpon>Filter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalInquiry.resx">
+      <DependentUpon>GlobalInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalPreview.resx">
+      <DependentUpon>GlobalPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalSendEmail.resx">
+      <DependentUpon>GlobalSendEmail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InquiryV1.resx">
+      <DependentUpon>InquiryV1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InquiryV2.resx">
+      <DependentUpon>InquiryV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Bentuk\FrmL_Bentuk.resx">
+      <DependentUpon>FrmL_Bentuk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Bentuk\FrmM_Bentuk.resx">
+      <DependentUpon>FrmM_Bentuk.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\FrmM_ResizeMapping.resx">
+      <DependentUpon>FrmM_ResizeMapping.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\InventTableHeader.resx">
+      <DependentUpon>InventTableHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Inventory\FrmL_Inventory.resx">
+      <DependentUpon>FrmL_Inventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Inventory\FrmM_Inventory.resx">
+      <DependentUpon>FrmM_Inventory.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Inventory\FrmPop_NewItem.resx">
+      <DependentUpon>FrmPop_NewItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\KodeBerat\FormKodeBerat.resx">
+      <DependentUpon>FormKodeBerat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\KodeBerat\InquiryKodeBerat.resx">
+      <DependentUpon>InquiryKodeBerat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\TagSize\FormTagSize.resx">
+      <DependentUpon>FormTagSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\TagSize\InquiryTagSize.resx">
+      <DependentUpon>InquiryTagSize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\NotaAdjustment\HeaderNotaAdjust.resx">
+      <DependentUpon>HeaderNotaAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\NotaAdjustment\InquiryNotaAdjust.resx">
+      <DependentUpon>InquiryNotaAdjust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\NotaAdjustment\SearchItem.resx">
+      <DependentUpon>SearchItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\NotaTransfer\NTForm.resx">
+      <DependentUpon>NTForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\NotaTransfer\NT_Inquiry.resx">
+      <DependentUpon>NT_Inquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\NotaTransfer\PopUpDetail.resx">
+      <DependentUpon>PopUpDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\StockView\StockViewHeader.resx">
+      <DependentUpon>StockViewHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Address\FrmL_AddressType.resx">
+      <DependentUpon>FrmL_AddressType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Address\FrmM_AddressType.resx">
+      <DependentUpon>FrmM_AddressType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\BankGroup\BankGroupForm.resx">
+      <DependentUpon>BankGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\BankGroup\FrmL_BankGroup.resx">
+      <DependentUpon>FrmL_BankGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\BankGroup\FrmM_BankGroup.resx">
+      <DependentUpon>FrmM_BankGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Bank\BankForm.resx">
+      <DependentUpon>BankForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Bank\FrmL_Bank.resx">
+      <DependentUpon>FrmL_Bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Bank\FrmM_Bank.resx">
+      <DependentUpon>FrmM_Bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyInfo\FormCompanyInfo.resx">
+      <DependentUpon>FormCompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\CompanyInfo\InquiryCompanyInfo.resx">
+      <DependentUpon>InquiryCompanyInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\ConfigItem\FormConfigItem.resx">
+      <DependentUpon>FormConfigItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\ConfigItem\InquiryConfigItem.resx">
+      <DependentUpon>InquiryConfigItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Contact\FrmL_ContactType.resx">
+      <DependentUpon>FrmL_ContactType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Contact\FrmM_ContactType.resx">
+      <DependentUpon>FrmM_ContactType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Counter\Counter.resx">
+      <DependentUpon>Counter.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Currency\Currency.resx">
+      <DependentUpon>Currency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Currency\FrmL_Currency.resx">
+      <DependentUpon>FrmL_Currency.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Customer\FrmL_Customer.resx">
+      <DependentUpon>FrmL_Customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Customer\FrmM_Customer.resx">
+      <DependentUpon>FrmM_Customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Address\FrmPop_Address.resx">
+      <DependentUpon>FrmPop_Address.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Contact\FrmPop_Contact.resx">
+      <DependentUpon>FrmPop_Contact.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Customer\FrmPop_NewCustomer.resx">
+      <DependentUpon>FrmPop_NewCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\DeliveryMethod\DeliveryForm.resx">
+      <DependentUpon>DeliveryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ExchangeRate\ExchangeRate.resx">
+      <DependentUpon>ExchangeRate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Gelombang\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Gelombang\GelombangForm.resx">
+      <DependentUpon>GelombangForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Gelombang\GelombangInquiry.resx">
+      <DependentUpon>GelombangInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Golongan\GolonganForm.resx">
+      <DependentUpon>GolonganForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Golongan\GolonganInquiry.resx">
+      <DependentUpon>GolonganInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Golongan\FrmL_GolPrsh.resx">
+      <DependentUpon>FrmL_GolPrsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Gol_Prsh\FrmL_Gol_Prsh.resx">
+      <DependentUpon>FrmL_Gol_Prsh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Gol_Prsh\FrmM_Gol_Prsh.resx">
+      <DependentUpon>FrmM_Gol_Prsh.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Group\GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Group\GroupInquiry.resx">
+      <DependentUpon>GroupInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Dimension\FormDimension.resx">
+      <DependentUpon>FormDimension.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Dimension\InquiryDimension.resx">
+      <DependentUpon>InquiryDimension.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\FormInventTable.resx">
+      <DependentUpon>FormInventTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\HdrResize.resx">
+      <DependentUpon>HdrResize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\HeaderResize.resx">
+      <DependentUpon>HeaderResize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\InquiryInventTable.resx">
+      <DependentUpon>InquiryInventTable.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\InquiryResize.resx">
+      <DependentUpon>InquiryResize.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\PopUpConversion.resx">
+      <DependentUpon>PopUpConversion.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\InvantTable\PopUpInvent.resx">
+      <DependentUpon>PopUpInvent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Measurement\FormMeasurement.resx">
+      <DependentUpon>FormMeasurement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Measurement\InquiryMeasurement.resx">
+      <DependentUpon>InquiryMeasurement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ItemDP\FrmL_ItemDP.resx">
+      <DependentUpon>FrmL_ItemDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\ItemDP\FrmM_ItemDP.resx">
+      <DependentUpon>FrmM_ItemDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PricelistConfig\LooupSubGroup2ID.resx">
+      <DependentUpon>LooupSubGroup2ID.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PricelistConfig\PricelistConfigForm.resx">
+      <DependentUpon>PricelistConfigForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PricelistConfig\PricelistConfigInquiry.resx">
+      <DependentUpon>PricelistConfigInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Site\FormSite.resx">
+      <DependentUpon>FormSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Site\InquirySite.resx">
+      <DependentUpon>InquirySite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\SubGroup1\FormSubGroup1.resx">
+      <DependentUpon>FormSubGroup1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\SubGroup1\InquirySubGroup1.resx">
+      <DependentUpon>InquirySubGroup1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\SubGroup2\FormSubGroup2.resx">
+      <DependentUpon>FormSubGroup2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\SubGroup2\InquirySubGroup2.resx">
+      <DependentUpon>InquirySubGroup2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Type\FormType.resx">
+      <DependentUpon>FormType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Type\InquiryType.resx">
+      <DependentUpon>InquiryType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Unit\FormUnit.resx">
+      <DependentUpon>FormUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Unit\InquiryUnit.resx">
+      <DependentUpon>InquiryUnit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Kota\FrmL_Kota.resx">
+      <DependentUpon>FrmL_Kota.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Kota\FrmM_Kota.resx">
+      <DependentUpon>FrmM_Kota.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Manufacturer\InqManufacturer.resx">
+      <DependentUpon>InqManufacturer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Manufacturer\Manufacturer.resx">
+      <DependentUpon>Manufacturer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Merek\InqMerek.resx">
+      <DependentUpon>InqMerek.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Merek\Merek.resx">
+      <DependentUpon>Merek.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Payment Mode\PaymentMode.resx">
+      <DependentUpon>PaymentMode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PIC\DashPIC.resx">
+      <DependentUpon>DashPIC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\PIC\PIC.resx">
+      <DependentUpon>PIC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Quality\InqQuality.resx">
+      <DependentUpon>InqQuality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Quality\Quality.resx">
+      <DependentUpon>Quality.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Rekening\FrmPop_Rekening.resx">
+      <DependentUpon>FrmPop_Rekening.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Sales\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Spec\InqSpec.resx">
+      <DependentUpon>InqSpec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory\Master\Spec\Spec.resx">
+      <DependentUpon>Spec.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Site\SiteBlok.resx">
+      <DependentUpon>SiteBlok.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Site\SiteBlokInq.resx">
+      <DependentUpon>SiteBlokInq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\TermOfPayment\ToP.resx">
+      <DependentUpon>ToP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\GroupMenu\GroupMenuDashboard.resx">
+      <DependentUpon>GroupMenuDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\GroupMenu\GroupMenuForm.resx">
+      <DependentUpon>GroupMenuForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\Group\GroupDashboard.resx">
+      <DependentUpon>GroupDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\Group\GroupForm.resx">
+      <DependentUpon>GroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\Menu\MenuDashboard.resx">
+      <DependentUpon>MenuDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\Menu\MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\UserGroup\UserGroupDashboard.resx">
+      <DependentUpon>UserGroupDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\UserGroup\UserGroupForm.resx">
+      <DependentUpon>UserGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\Username\UsernameDashboard.resx">
+      <DependentUpon>UsernameDashboard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\User\Username\UsernameForm.resx">
+      <DependentUpon>UsernameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Vendor\FrmL_Vendor.resx">
+      <DependentUpon>FrmL_Vendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Vendor\FrmM_Vendor.resx">
+      <DependentUpon>FrmM_Vendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Vendor\FrmPop_NewVendor.resx">
+      <DependentUpon>FrmPop_NewVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUpSelect\Vendor.resx">
+      <DependentUpon>Vendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\Attachment\Attachment.resx">
+      <DependentUpon>Attachment.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\Contact\Frm_Contact.resx">
+      <DependentUpon>Frm_Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\CustomerID\CustomerId.resx">
+      <DependentUpon>CustomerId.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\Customer\Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\FrmSearchMgr\FrmSearchMgr.resx">
+      <DependentUpon>FrmSearchMgr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\FullItemId\FullItemId.resx">
+      <DependentUpon>FullItemId.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\InventSiteID\InventSite.resx">
+      <DependentUpon>InventSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\Item\Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\MoUCustomerId\MoUId.resx">
+      <DependentUpon>MoUId.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\PriceListBeli\PriceListBeli.resx">
+      <DependentUpon>PriceListBeli.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\PriceListJual\PriceListJual.resx">
+      <DependentUpon>PriceListJual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\SalesOrder\SalesOrder.resx">
+      <DependentUpon>SalesOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\SalesOrder\SODetail.resx">
+      <DependentUpon>SODetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\Stock\Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\User\User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\VendorReference\VendorReference.resx">
+      <DependentUpon>VendorReference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopUp\Vendor\Vendor.resx">
+      <DependentUpon>Vendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricelist\LookupCustomer.resx">
+      <DependentUpon>LookupCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricelist\LookupReferenceDoc.resx">
+      <DependentUpon>LookupReferenceDoc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricelist\LookupVendorReference.resx">
+      <DependentUpon>LookupVendorReference.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricelist\PricelistHeader.resx">
+      <DependentUpon>PricelistHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricelist\PricelistInquiry.resx">
+      <DependentUpon>PricelistInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pricelist\SubGroupHeader.resx">
+      <DependentUpon>SubGroupHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ActionParkedItem\HeaderActionParkedItem.resx">
+      <DependentUpon>HeaderActionParkedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ActionParkedItem\InquiryActionParkedItem.resx">
+      <DependentUpon>InquiryActionParkedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CanvasSheet\ApproveCanvasSheet.resx">
+      <DependentUpon>ApproveCanvasSheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CanvasSheet\FormCanvasShet2.resx">
+      <DependentUpon>FormCanvasShet2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CanvasSheet\GeneratePO.resx">
+      <DependentUpon>GeneratePO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CanvasSheet\SearchQuotation.resx">
+      <DependentUpon>SearchQuotation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CanvasSheet\FormCanvasSheet.resx">
+      <DependentUpon>FormCanvasSheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\CanvasSheet\InquiryCanvasSheet.resx">
+      <DependentUpon>InquiryCanvasSheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\GRHeaderV2.resx">
+      <DependentUpon>GRHeaderV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\HeaderGoodsReceipt.resx">
+      <DependentUpon>HeaderGoodsReceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\HeaderResizeGR.resx">
+      <DependentUpon>HeaderResizeGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\InquiryGoodsReceipt.resx">
+      <DependentUpon>InquiryGoodsReceipt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\InquiryResizeGR.resx">
+      <DependentUpon>InquiryResizeGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\PopUpGR.resx">
+      <DependentUpon>PopUpGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\PopUpRO.resx">
+      <DependentUpon>PopUpRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\Rpt_GR.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_GR2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\GoodsReceipt\Rpt_TiketBongkarMuat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_TiketBongkarMuat2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaDebet\FrmT_NotaDebet.resx">
+      <DependentUpon>FrmT_NotaDebet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaPurchaseParked\DetailParkedItem.resx">
+      <DependentUpon>DetailParkedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaPurchaseParked\HeaderNotaPurchaseParked.resx">
+      <DependentUpon>HeaderNotaPurchaseParked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaPurchaseParked\InquiryNotaPurchaseParked.resx">
+      <DependentUpon>InquiryNotaPurchaseParked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaPurchaseParked\LookupNotaPurchaseParked.resx">
+      <DependentUpon>LookupNotaPurchaseParked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaResize\FormResizeGR.resx">
+      <DependentUpon>FormResizeGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaResize\InventResizeSearch.resx">
+      <DependentUpon>InventResizeSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\AddGR.resx">
+      <DependentUpon>AddGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\AddWH.resx">
+      <DependentUpon>AddWH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\InqNRBApproval.resx">
+      <DependentUpon>InqNRBApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\InqReturBeli.resx">
+      <DependentUpon>InqReturBeli.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\NRBApproval.resx">
+      <DependentUpon>NRBApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\ReturBeliHeader.resx">
+      <DependentUpon>ReturBeliHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\NotaReturBeli\Rpt_NRB.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_NRB.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ParkedItem\DetailParkedItem.resx">
+      <DependentUpon>DetailParkedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ParkedItem\HeaderParkedItem.resx">
+      <DependentUpon>HeaderParkedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ParkedItem\InquiryParkedItem.resx">
+      <DependentUpon>InquiryParkedItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceListBeliApproval\HeaderPLBApproval.resx">
+      <DependentUpon>HeaderPLBApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceListBeliApproval\InquiryPLJBpproval.resx">
+      <DependentUpon>InquiryPLJBpproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceListBeli\DetailPLB.resx">
+      <DependentUpon>DetailPLB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceListBeli\HeaderPLB.resx">
+      <DependentUpon>HeaderPLB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceListBeli\InqueryPLB.resx">
+      <DependentUpon>InqueryPLB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PriceListBeli\PriceListBeliAktif.resx">
+      <DependentUpon>PriceListBeliAktif.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseAgreement\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseAgreement\PAForm.resx">
+      <DependentUpon>PAForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseAgreement\PAInq.resx">
+      <DependentUpon>PAInq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseAgreement\Rpt_PA_Ga_Rinci.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_PA_Ga_Rinci.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseAgreement\Rpt_PA_Rinci.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_PA_Rinci.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseAgreement\SelectPQ.resx">
+      <DependentUpon>SelectPQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderApproval\POHeaderApproval.resx">
+      <DependentUpon>POHeaderApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderApproval\POInquiryApproval.resx">
+      <DependentUpon>POInquiryApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderNew\PA.resx">
+      <DependentUpon>PA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderNew\POForm.resx">
+      <DependentUpon>POForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderNew\POInquiry.resx">
+      <DependentUpon>POInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderNew\POPreview.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>POPreview.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseOrderNew\PQ.resx">
+      <DependentUpon>PQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseQuotation\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseQuotation\DetailPQ.resx">
+      <DependentUpon>DetailPQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseQuotation\FormPQ.resx">
+      <DependentUpon>FormPQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseQuotation\GenerateRFQ.resx">
+      <DependentUpon>GenerateRFQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseQuotation\InquiryPQ.resx">
+      <DependentUpon>InquiryPQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisitionApproval\HeaderPRApproval.resx">
+      <DependentUpon>HeaderPRApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisitionApproval\InquiryPRApproval.resx">
+      <DependentUpon>InquiryPRApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisition\DetailPR.resx">
+      <DependentUpon>DetailPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisition\Gelombang.resx">
+      <DependentUpon>Gelombang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisition\HeaderPR.resx">
+      <DependentUpon>HeaderPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisition\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseRequisition\InquiryPR.resx">
+      <DependentUpon>InquiryPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ReceiptOrder\HeaderReceiptOrder.resx">
+      <DependentUpon>HeaderReceiptOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ReceiptOrder\InquiryReceiptOrder.resx">
+      <DependentUpon>InquiryReceiptOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ReceiptOrder\PO.resx">
+      <DependentUpon>PO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\ReceiptOrder\Rpt_RO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_RO1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\NotaReturJual\AddBBK.resx">
+      <DependentUpon>AddBBK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\NotaReturJual\AddInventSite.resx">
+      <DependentUpon>AddInventSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\NotaReturJual\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\NotaReturJual\AddVehicle.resx">
+      <DependentUpon>AddVehicle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\NotaReturJual\InqReturJual.resx">
+      <DependentUpon>InqReturJual.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\NotaReturJual\ReturJualHeader.resx">
+      <DependentUpon>ReturJualHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\ReturTukarBarang\AddGR.resx">
+      <DependentUpon>AddGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\ReturTukarBarang\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\ReturTukarBarang\InqRTB.resx">
+      <DependentUpon>InqRTB.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\ReturTukarBarang\RTBHeader.resx">
+      <DependentUpon>RTBHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\RTBApproval\InqRTBApproval.resx">
+      <DependentUpon>InqRTBApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\Retur\RTBApproval\RTBApproval.resx">
+      <DependentUpon>RTBApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\AddPR.resx">
+      <DependentUpon>AddPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\AddVendor.resx">
+      <DependentUpon>AddVendor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\CreatePQ.resx">
+      <DependentUpon>CreatePQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\InfoRFQ.resx">
+      <DependentUpon>InfoRFQ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\RFQForm.resx">
+      <DependentUpon>RFQForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\RFQInquiry.resx">
+      <DependentUpon>RFQInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\Rpt_RFQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_RFQ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\Rpt_RFQ_Ga_Rinci.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_RFQ_Ga_Rinci1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\RFQ\Rpt_RFQ_Rinci.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_RFQ_Rinci1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\BBK\BBKHeader.resx">
+      <DependentUpon>BBKHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\BBK\Rpt_GI_SuratJalan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_GI_SuratJalan2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\BBK\Rpt_GI_Ticket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_GI_Ticket1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\BBK\UbahReceiptDate.resx">
+      <DependentUpon>UbahReceiptDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\CreditLimit\CreditLimitHeader.resx">
+      <DependentUpon>CreditLimitHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\DeliveryOrder\AddItemDO.resx">
+      <DependentUpon>AddItemDO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\DeliveryOrder\DOHeader.resx">
+      <DependentUpon>DOHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\DeliveryOrder\RequestCancelDO.resx">
+      <DependentUpon>RequestCancelDO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\DeliveryOrder\Rpt_DO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_DO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\MoUCustomer\DetailMoUCustomer.resx">
+      <DependentUpon>DetailMoUCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\MoUCustomer\HeaderMoUCustomer.resx">
+      <DependentUpon>HeaderMoUCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\MoUCustomer\InqueryMoUCustomer.resx">
+      <DependentUpon>InqueryMoUCustomer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaCredit\FrmT_NotaCredit.resx">
+      <DependentUpon>FrmT_NotaCredit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\AddGI.resx">
+      <DependentUpon>AddGI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\AddItem.resx">
+      <DependentUpon>AddItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\AddWH.resx">
+      <DependentUpon>AddWH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\InqNRJApproval.resx">
+      <DependentUpon>InqNRJApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\InqNRJCreate.resx">
+      <DependentUpon>InqNRJCreate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\NRJApproval.resx">
+      <DependentUpon>NRJApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\NRJHeader.resx">
+      <DependentUpon>NRJHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\NotaReturJual\Rpt_NRJ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_NRJ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJualApproval\HeaderPLJApproval.resx">
+      <DependentUpon>HeaderPLJApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJualApproval\InquiryPLJApproval.resx">
+      <DependentUpon>InquiryPLJApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJual\DetailPLJ.resx">
+      <DependentUpon>DetailPLJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJual\Gelombang.resx">
+      <DependentUpon>Gelombang.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJual\HeaderPLJ.resx">
+      <DependentUpon>HeaderPLJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJual\InqueryPLJ.resx">
+      <DependentUpon>InqueryPLJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\PriceListJual\PriceListJualAktif.resx">
+      <DependentUpon>PriceListJualAktif.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesAgreement\Rpt_SA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_SA.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesAgreement\SAHeader.resx">
+      <DependentUpon>SAHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesAgreement\SAReserved.resx">
+      <DependentUpon>SAReserved.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesOrder\Rpt_SO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_SO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesOrder\SOHeader.resx">
+      <DependentUpon>SOHeader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesOrder\SOReserved.resx">
+      <DependentUpon>SOReserved.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesQuotation\Rpt_SQ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rpt_SQ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesQuotation\SQHeader2.resx">
+      <DependentUpon>SQHeader2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\SalesQuotation\SQInq.resx">
+      <DependentUpon>SQInq.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchQuery.resx">
+      <DependentUpon>SearchQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchQueryV1.resx">
+      <DependentUpon>SearchQueryV1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchQueryV2.resx">
+      <DependentUpon>SearchQueryV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchV2.resx">
+      <DependentUpon>SearchV2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\AccountPayable\TasklistPurchaseInvoiceAP.resx">
+      <DependentUpon>TasklistPurchaseInvoiceAP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\AccountsReceivable\TasklistCustomerInvoice.resx">
+      <DependentUpon>TasklistCustomerInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\GlobalTasklist.resx">
+      <DependentUpon>GlobalTasklist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Pricelist\TasklistPricelist.resx">
+      <DependentUpon>TasklistPricelist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Purchase\CanvasSheet\TaskListCanvasSheet.resx">
+      <DependentUpon>TaskListCanvasSheet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Purchase\GoodsReceipt\TaskListGR.resx">
+      <DependentUpon>TaskListGR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Purchase\NotaPurchaseParked\TaskListNotaPurchaseParked.resx">
+      <DependentUpon>TaskListNotaPurchaseParked.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Purchase\PurchaseAgreement\TaskListPA.resx">
+      <DependentUpon>TaskListPA.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Purchase\PurchaseRequisition\TaskListPR.resx">
+      <DependentUpon>TaskListPR.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Purchase\ReceiptOrder\TaskListRO.resx">
+      <DependentUpon>TaskListRO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\Sales\NotaReturJual\TaskListNRJ.resx">
+      <DependentUpon>TaskListNRJ.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskList\TaskListApproval.resx">
+      <DependentUpon>TaskListApproval.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Frm_ChangePass.resx">
+      <DependentUpon>Frm_ChangePass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Frm_SearchMgr.resx">
+      <DependentUpon>Frm_SearchMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Frm_UDataPemakai.resx">
+      <DependentUpon>Frm_UDataPemakai.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Purchase\ActionParkedItem\HeaderActionParkedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ActionParkedItem\HeaderActionParkedItem.Designer.cs">
+      <DependentUpon>HeaderActionParkedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ActionParkedItem\InquiryActionParkedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ActionParkedItem\InquiryActionParkedItem.Designer.cs">
+      <DependentUpon>InquiryActionParkedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\ApproveCanvasSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\ApproveCanvasSheet.Designer.cs">
+      <DependentUpon>ApproveCanvasSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\FormCanvasShet2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\FormCanvasShet2.Designer.cs">
+      <DependentUpon>FormCanvasShet2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\GeneratePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\GeneratePO.Designer.cs">
+      <DependentUpon>GeneratePO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\SearchQuotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\SearchQuotation.Designer.cs">
+      <DependentUpon>SearchQuotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\FormCanvasSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\FormCanvasSheet.Designer.cs">
+      <DependentUpon>FormCanvasSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\InquiryCanvasSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\CanvasSheet\InquiryCanvasSheet.Designer.cs">
+      <DependentUpon>InquiryCanvasSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\GRHeaderV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\GRHeaderV2.Designer.cs">
+      <DependentUpon>GRHeaderV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\HeaderGoodsReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\HeaderGoodsReceipt.Designer.cs">
+      <DependentUpon>HeaderGoodsReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\HeaderResizeGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\HeaderResizeGR.Designer.cs">
+      <DependentUpon>HeaderResizeGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\InquiryGoodsReceipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\InquiryGoodsReceipt.Designer.cs">
+      <DependentUpon>InquiryGoodsReceipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\InquiryResizeGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\InquiryResizeGR.Designer.cs">
+      <DependentUpon>InquiryResizeGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\PopUpGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\PopUpGR.Designer.cs">
+      <DependentUpon>PopUpGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\PopUpRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\PopUpRO.Designer.cs">
+      <DependentUpon>PopUpRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\Rpt_GR2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_GR.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\GoodsReceipt\Rpt_TiketBongkarMuat2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_TiketBongkarMuat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaDebet\FrmL_NotaDebet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaDebet\FrmL_NotaDebet.Designer.cs">
+      <DependentUpon>FrmL_NotaDebet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaDebet\FrmT_NotaDebet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaDebet\FrmT_NotaDebet.Designer.cs">
+      <DependentUpon>FrmT_NotaDebet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\DetailParkedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\DetailParkedItem.Designer.cs">
+      <DependentUpon>DetailParkedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\HeaderNotaPurchaseParked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\HeaderNotaPurchaseParked.Designer.cs">
+      <DependentUpon>HeaderNotaPurchaseParked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\InquiryNotaPurchaseParked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\InquiryNotaPurchaseParked.Designer.cs">
+      <DependentUpon>InquiryNotaPurchaseParked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\LookupNotaPurchaseParked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaPurchaseParked\LookupNotaPurchaseParked.Designer.cs">
+      <DependentUpon>LookupNotaPurchaseParked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaResize\FormResizeGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaResize\FormResizeGR.Designer.cs">
+      <DependentUpon>FormResizeGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaResize\InventResizeSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaResize\InventResizeSearch.Designer.cs">
+      <DependentUpon>InventResizeSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\AddGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\AddGR.Designer.cs">
+      <DependentUpon>AddGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\AddWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\AddWH.Designer.cs">
+      <DependentUpon>AddWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\InqNRBApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\InqNRBApproval.Designer.cs">
+      <DependentUpon>InqNRBApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\InqReturBeli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\InqReturBeli.Designer.cs">
+      <DependentUpon>InqReturBeli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\NRBApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\NRBApproval.Designer.cs">
+      <DependentUpon>NRBApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\ReturBeliHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\ReturBeliHeader.Designer.cs">
+      <DependentUpon>ReturBeliHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\NotaReturBeli\Rpt_NRB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_NRB.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\ParkedItem\DetailParkedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ParkedItem\DetailParkedItem.Designer.cs">
+      <DependentUpon>DetailParkedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ParkedItem\HeaderParkedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ParkedItem\HeaderParkedItem.Designer.cs">
+      <DependentUpon>HeaderParkedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ParkedItem\InquiryParkedItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ParkedItem\InquiryParkedItem.Designer.cs">
+      <DependentUpon>InquiryParkedItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeliApproval\HeaderPLBApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeliApproval\HeaderPLBApproval.Designer.cs">
+      <DependentUpon>HeaderPLBApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeliApproval\InquiryPLJBpproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeliApproval\InquiryPLJBpproval.Designer.cs">
+      <DependentUpon>InquiryPLJBpproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\DetailPLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\DetailPLB.Designer.cs">
+      <DependentUpon>DetailPLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\HeaderPLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\HeaderPLB.Designer.cs">
+      <DependentUpon>HeaderPLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\InqueryPLB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\InqueryPLB.Designer.cs">
+      <DependentUpon>InqueryPLB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\PriceListBeliAktif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PriceListBeli\PriceListBeliAktif.Designer.cs">
+      <DependentUpon>PriceListBeliAktif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\PAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\PAForm.Designer.cs">
+      <DependentUpon>PAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\PAInq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\PAInq.Designer.cs">
+      <DependentUpon>PAInq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\Rpt_PA_Ga_Rinci.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_PA_Ga_Rinci.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\Rpt_PA_Rinci.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_PA_Rinci.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\SelectPQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseAgreement\SelectPQ.Designer.cs">
+      <DependentUpon>SelectPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderApproval\POHeaderApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderApproval\POHeaderApproval.Designer.cs">
+      <DependentUpon>POHeaderApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderApproval\POInquiryApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderApproval\POInquiryApproval.Designer.cs">
+      <DependentUpon>POInquiryApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\PA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\PA.Designer.cs">
+      <DependentUpon>PA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\POForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\POForm.Designer.cs">
+      <DependentUpon>POForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\POInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\POInquiry.Designer.cs">
+      <DependentUpon>POInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\POPreview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>POPreview.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\PQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseOrderNew\PQ.Designer.cs">
+      <DependentUpon>PQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\DetailPQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\DetailPQ.Designer.cs">
+      <DependentUpon>DetailPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\FormPQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\FormPQ.Designer.cs">
+      <DependentUpon>FormPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\GenerateRFQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\GenerateRFQ.Designer.cs">
+      <DependentUpon>GenerateRFQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\InquiryPQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\InquiryPQ.Designer.cs">
+      <DependentUpon>InquiryPQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseQuotation\ReportRFQ.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisitionApproval\HeaderPRApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisitionApproval\HeaderPRApproval.Designer.cs">
+      <DependentUpon>HeaderPRApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisitionApproval\InquiryPRApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisitionApproval\InquiryPRApproval.Designer.cs">
+      <DependentUpon>InquiryPRApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\DetailPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\DetailPR.Designer.cs">
+      <DependentUpon>DetailPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\Gelombang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\Gelombang.Designer.cs">
+      <DependentUpon>Gelombang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\HeaderPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\HeaderPR.Designer.cs">
+      <DependentUpon>HeaderPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\InquiryPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseRequisition\InquiryPR.Designer.cs">
+      <DependentUpon>InquiryPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\HeaderReceiptOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\HeaderReceiptOrder.Designer.cs">
+      <DependentUpon>HeaderReceiptOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\InquiryReceiptOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\InquiryReceiptOrder.Designer.cs">
+      <DependentUpon>InquiryReceiptOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\PO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\PO.Designer.cs">
+      <DependentUpon>PO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\ReceiptOrder\Rpt_RO1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_RO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddBBK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddBBK.Designer.cs">
+      <DependentUpon>AddBBK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddInventSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddInventSite.Designer.cs">
+      <DependentUpon>AddInventSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddVehicle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\AddVehicle.Designer.cs">
+      <DependentUpon>AddVehicle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\InqReturJual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\InqReturJual.Designer.cs">
+      <DependentUpon>InqReturJual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\ReturJualHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\NotaReturJual\ReturJualHeader.Designer.cs">
+      <DependentUpon>ReturJualHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\AddGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\AddGR.Designer.cs">
+      <DependentUpon>AddGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\InqRTB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\InqRTB.Designer.cs">
+      <DependentUpon>InqRTB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\RTBHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\ReturTukarBarang\RTBHeader.Designer.cs">
+      <DependentUpon>RTBHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\RTBApproval\InqRTBApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\RTBApproval\InqRTBApproval.Designer.cs">
+      <DependentUpon>InqRTBApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Retur\RTBApproval\RTBApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Retur\RTBApproval\RTBApproval.Designer.cs">
+      <DependentUpon>RTBApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\AddPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\AddPR.Designer.cs">
+      <DependentUpon>AddPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\AddVendor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\AddVendor.Designer.cs">
+      <DependentUpon>AddVendor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\CreatePQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\CreatePQ.Designer.cs">
+      <DependentUpon>CreatePQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\InfoRFQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\InfoRFQ.Designer.cs">
+      <DependentUpon>InfoRFQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\RFQForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\RFQForm.Designer.cs">
+      <DependentUpon>RFQForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\RFQInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\RFQInquiry.Designer.cs">
+      <DependentUpon>RFQInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\RFQ\Rpt_RFQ.cs">
+      <DependentUpon>Rpt_RFQ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Purchase\RFQ\Rpt_RFQ_Ga_Rinci1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_RFQ_Ga_Rinci.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Purchase\RFQ\Rpt_RFQ_Rinci1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_RFQ_Rinci.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\BBK\BBKHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\BBK\BBKHeader.Designer.cs">
+      <DependentUpon>BBKHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\BBK\Rpt_GI_SuratJalan1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\BBK\Rpt_GI_Ticket.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\BBK\UbahReceiptDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\BBK\UbahReceiptDate.Designer.cs">
+      <DependentUpon>UbahReceiptDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\CreditLimit\CreditLimitHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\CreditLimit\CreditLimitHeader.Designer.cs">
+      <DependentUpon>CreditLimitHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\AddItemDO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\AddItemDO.Designer.cs">
+      <DependentUpon>AddItemDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\DOHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\DOHeader.Designer.cs">
+      <DependentUpon>DOHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\RequestCancelDO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\RequestCancelDO.Designer.cs">
+      <DependentUpon>RequestCancelDO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\DeliveryOrder\Rpt_DO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_DO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\MoUCustomer\DetailMoUCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\MoUCustomer\DetailMoUCustomer.Designer.cs">
+      <DependentUpon>DetailMoUCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\MoUCustomer\HeaderMoUCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\MoUCustomer\HeaderMoUCustomer.Designer.cs">
+      <DependentUpon>HeaderMoUCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\MoUCustomer\InqueryMoUCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\MoUCustomer\InqueryMoUCustomer.Designer.cs">
+      <DependentUpon>InqueryMoUCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaCredit\FrmL_NotaCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaCredit\FrmL_NotaCredit.Designer.cs">
+      <DependentUpon>FrmL_NotaCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaCredit\FrmT_NotaCredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaCredit\FrmT_NotaCredit.Designer.cs">
+      <DependentUpon>FrmT_NotaCredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\AddGI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\AddGI.Designer.cs">
+      <DependentUpon>AddGI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\AddItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\AddItem.Designer.cs">
+      <DependentUpon>AddItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\AddWH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\AddWH.Designer.cs">
+      <DependentUpon>AddWH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\InqNRJApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\InqNRJApproval.Designer.cs">
+      <DependentUpon>InqNRJApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\InqNRJCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\InqNRJCreate.Designer.cs">
+      <DependentUpon>InqNRJCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\NRJApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\NRJApproval.Designer.cs">
+      <DependentUpon>NRJApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\NRJHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\NRJHeader.Designer.cs">
+      <DependentUpon>NRJHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\NotaReturJual\Rpt_NRJ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_NRJ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJualApproval\HeaderPLJApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJualApproval\HeaderPLJApproval.Designer.cs">
+      <DependentUpon>HeaderPLJApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PriceListJualApproval\InquiryPLJApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJualApproval\InquiryPLJApproval.Designer.cs">
+      <DependentUpon>InquiryPLJApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\DetailPLJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\DetailPLJ.Designer.cs">
+      <DependentUpon>DetailPLJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\Gelombang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\Gelombang.Designer.cs">
+      <DependentUpon>Gelombang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\HeaderPLJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\HeaderPLJ.Designer.cs">
+      <DependentUpon>HeaderPLJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\InqueryPLJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\InqueryPLJ.Designer.cs">
+      <DependentUpon>InqueryPLJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\PriceListJualAktif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\PriceListJual\PriceListJualAktif.Designer.cs">
+      <DependentUpon>PriceListJualAktif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesAgreement\Rpt_SA.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_SA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesAgreement\SAHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesAgreement\SAHeader.Designer.cs">
+      <DependentUpon>SAHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesAgreement\SAReserved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesAgreement\SAReserved.Designer.cs">
+      <DependentUpon>SAReserved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesOrder\Rpt_SO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_SO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesOrder\SOHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesOrder\SOHeader.Designer.cs">
+      <DependentUpon>SOHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesOrder\SOReserved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesOrder\SOReserved.Designer.cs">
+      <DependentUpon>SOReserved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesQuotation\Rpt_SQ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rpt_SQ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesQuotation\SQHeader2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesQuotation\SQHeader2.Designer.cs">
+      <DependentUpon>SQHeader2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\SalesQuotation\SQInq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\SalesQuotation\SQInq.Designer.cs">
+      <DependentUpon>SQInq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchQuery.Designer.cs">
+      <DependentUpon>SearchQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchQueryV1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchQueryV1.Designer.cs">
+      <DependentUpon>SearchQueryV1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchQueryV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchQueryV2.Designer.cs">
+      <DependentUpon>SearchQueryV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchV2.Designer.cs">
+      <DependentUpon>SearchV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\AccountPayable\TasklistPurchaseInvoiceAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\AccountPayable\TasklistPurchaseInvoiceAP.Designer.cs">
+      <DependentUpon>TasklistPurchaseInvoiceAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\AccountsReceivable\TasklistCustomerInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\AccountsReceivable\TasklistCustomerInvoice.Designer.cs">
+      <DependentUpon>TasklistCustomerInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\GlobalTasklist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\GlobalTasklist.Designer.cs">
+      <DependentUpon>GlobalTasklist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Pricelist\TasklistPricelist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Pricelist\TasklistPricelist.Designer.cs">
+      <DependentUpon>TasklistPricelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Purchase\CanvasSheet\TaskListCanvasSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Purchase\CanvasSheet\TaskListCanvasSheet.Designer.cs">
+      <DependentUpon>TaskListCanvasSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Purchase\GoodsReceipt\TaskListGR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Purchase\GoodsReceipt\TaskListGR.Designer.cs">
+      <DependentUpon>TaskListGR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Purchase\NotaPurchaseParked\TaskListNotaPurchaseParked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Purchase\NotaPurchaseParked\TaskListNotaPurchaseParked.Designer.cs">
+      <DependentUpon>TaskListNotaPurchaseParked.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Purchase\PurchaseAgreement\TaskListPA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Purchase\PurchaseAgreement\TaskListPA.Designer.cs">
+      <DependentUpon>TaskListPA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Purchase\PurchaseRequisition\TaskListPR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Purchase\PurchaseRequisition\TaskListPR.Designer.cs">
+      <DependentUpon>TaskListPR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Purchase\ReceiptOrder\TaskListRO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Purchase\ReceiptOrder\TaskListRO.Designer.cs">
+      <DependentUpon>TaskListRO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\Sales\DeliveryOrder\TaskListRequestCancelDO.cs" />
+    <Compile Include="TaskList\Sales\NotaReturJual\TaskListNRJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\Sales\NotaReturJual\TaskListNRJ.Designer.cs">
+      <DependentUpon>TaskListNRJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskList\TaskListApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskList\TaskListApproval.Designer.cs">
+      <DependentUpon>TaskListApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Frm_ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Frm_ChangePass.Designer.cs">
+      <DependentUpon>Frm_ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Frm_SearchMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Frm_SearchMgr.Designer.cs">
+      <DependentUpon>Frm_SearchMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Frm_UDataPemakai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Frm_UDataPemakai.Designer.cs">
+      <DependentUpon>Frm_UDataPemakai.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\MetroFramework.Design.dll" />
+    <Content Include="bin\Debug\MetroFramework.dll" />
+    <Content Include="bin\Debug\MetroFramework.Fonts.dll" />
+    <None Include="app.config" />
+    <None Include="Images\d.png" />
+    <None Include="Images\c.PNG" />
+    <None Include="Resources\d.png" />
+    <None Include="Resources\c.PNG" />
+    <None Include="Resources\pieChart.PNG" />
+    <None Include="Resources\barChart.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inventory\NotaTransferApproval\" />
+    <Folder Include="Master\Invent\" />
+    <Folder Include="Purchase\PurchaseRequisition\Info\" />
+    <Folder Include="Purchase\ReceiptOrder\Report\" />
+    <Folder Include="TaskList\Purchase\PurchaseOrder\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
